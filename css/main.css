@@ -1,12 +1,40 @@
-body {
+ body {
   font-family: 'Nunito', Arial, sans-serif;
   font-size: 12px;
 }
 
 h1, h2, h3, h4, h5, h6 {
-  margin: 0;
+  margin: 0; 
 }
 
+header{
+  background-color: white; 
+}
+
+.flex{
+  display: flex;
+}
+
+.justify{
+  justify-content: space-between;
+}
+
+
+.container{
+  width: 50%;
+  margin: 0 auto;
+}
+a{
+  text-decoration: none;
+
+}
+
+nav a{
+  margin-right: 20px;
+  font-weight: bold;
+  color: black;
+  
+}
 /*
 banner image
 https://s3-us-west-2.amazonaws.com/s.cdpn.io/2522641/melbourne.jpg
@@ -19,16 +47,40 @@ https://s3-us-west-2.amazonaws.com/s.cdpn.io/2522641/central-business-district.j
 */
 /**
 For banner over lay add this class to your div
-<div class="banner__container">
-  <div>
-      <!-- content goes here -->
-  </div>
-</div>
+<
 */
 .banner__container {
   position: relative;
+  background-image: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/2522641/melbourne.jpg");
+  background-size: cover;
+  height: 300px;
+  padding:50px 0; 
 }
 
+
+.banner__container .item{
+color: white;
+display: flex;
+justify-content: center;
+align-items: center;
+height: 20rem;
+text-shadow: 1px 1px #030303;
+}
+.banner__container .item .content{
+  text-align: center;
+  width: 300px;
+}
+
+.banner__container button{
+  color: white;
+  background-color: rgb(245, 99, 99);
+  border: 2px solid rgb(228, 59, 59);
+  padding-top : 5px;
+  padding-bottom: 5px;
+  padding-left: 25px;
+  padding-right: 25px;
+
+}
 .banner__container:before {
   position: absolute;
   top: 0;
@@ -37,4 +89,139 @@ For banner over lay add this class to your div
   bottom: 0;
   background-color: rgba(0,0,0,0.4);
   content: "";
+} 
+.middle_menu{
+  padding-top: 30px;
+  background-color: rgb(221, 221, 221);
+  justify-content: space-between;
+margin-bottom: 10px;
+  
 }
+
+.middle_menu .content_1{
+  background-color: white;
+  width: 350px;
+  border: 1px solid rgb(182, 181, 181);
+  margin: 10px; 
+ 
+
+}
+
+.middle_menu .content_1 .logo_item{
+  flex-direction: row;
+  align-items: center;
+  
+}
+
+.content_1 h4{
+  background-color: rgb(221, 221, 221);
+}
+
+.content_1 p{
+  font-size: 8px;
+}
+
+h2, h6{
+  text-align: center;
+  padding-top: 0;
+
+}
+
+.bottom_menu{
+  justify-content: space-between;
+  background-color: white;
+  height: 220px;
+  width: 80%;
+  margin-top: 10px;
+}
+
+.bottom_items{
+  height: 220px;
+  width: 180px;
+  background-color: rgb(221, 221, 221);
+  border: 0.5px solid rgb(182, 181, 181, .1);
+
+}
+
+.img_1{
+  background-image: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/2522641/fitzroy.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: rgb(255, 255, 255);
+}
+
+.img_2{
+  background-image: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/2522641/st-kilda.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: rgb(255, 255, 255);
+ }
+
+ .img_3{
+  background-image: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/2522641/central-business-district.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: rgb(255, 255, 255);
+ }
+ .size{
+   height: 180px;
+   width: 180px;
+ }
+ 
+ .bottom_menu p{
+   margin-top: 0;
+ }
+
+ .bottom_menu p{
+   font-size: 5px;
+ }
+
+ .bottom_items p{
+  padding: 10px;
+ }
+
+ .btn{
+   justify-content: center;
+ }
+ .btn button{
+  color: white;
+  background-color: rgb(245, 99, 99);
+  border: 2px solid rgb(228, 59, 59);
+  padding-top : 5px;
+  padding-bottom: 5px;
+  padding-left: 25px;
+  padding-right: 25px;
+  margin-top: 20px;
+  margin-bottom: 30px;
+ }
+
+ footer {
+  background-color: rgb(48, 48, 48);
+  color: white;
+  text-align: center;
+  padding: 15px;
+  position: static;
+  margin-bottom: 0px;
+  font-size: 10px;
+}
+
+
+
+
+
+ 
